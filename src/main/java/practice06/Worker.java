@@ -1,16 +1,14 @@
 package practice06;
 
-public class Student extends Person {
+public class Worker extends Person {
 
   private String name;
   private int age;
-  private int klass;
 
-  public Student(String name, int age, int klass) {
+  public Worker(String name, int age) {
     super(name, age);
     this.name = name;
     this.age = age;
-    this.klass = klass;
   }
 
   public String getName() {
@@ -29,15 +27,7 @@ public class Student extends Person {
     this.age = age;
   }
 
-  public int getKlass() {
-    return klass;
-  }
-
-  public void setKlass(int klass) {
-    this.klass = klass;
-  }
-
   public String introduce() {
-    return super.introduce() + " I am a Student. I am at Class " + this.klass + ".";
+    return super.introduce() + " I am a Worker. I have a job.";
   }
 }
